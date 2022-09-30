@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <script type='text/javascript' src='navBar.js'></script>  
+        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/navBar.js'></script>  
         <!-- Library for hamburger menu icon -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-        <link rel='stylesheet' href='navBar.css'>
-        <link rel='stylesheet' href='styleshett.css'>
+        <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/navBar.css'>
+        <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/stylesheet.css'>
         <title>Rae Riding Lessons | About</title>
     </head>
 
@@ -16,7 +16,8 @@
             <a href='index.php'>Rae Riding Lessons</a>
             <a href='index.php'>Home</a>
             <a href='lesson.php'>Schedule A Lesson</a>
-            <a href='about.php'>About</a>
+            <a href='about.php' class="active">About</a>
+            <a href='login.php'>Login</a>
             <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
                 <i class='fa fa-bars'></i>
             </a>
