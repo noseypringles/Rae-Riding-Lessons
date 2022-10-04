@@ -1,5 +1,5 @@
 <?php
-    $dbhost = "sql201.byetcluster.com";
+    $dbhost = "sql201.epizy.com";
     $dbuser = "epiz_32615472";
     $dbpass = "T854dfaUY87L8d";
     $dbname = "epiz_32615472_xxx";
