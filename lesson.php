@@ -1,11 +1,12 @@
 <?php
     session_start();
+    $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 
-        include("connection.php");
-        include("functions.php");
+    include("functions/connection.php");
+    include("functions/functions.php");
 
-        // // Checks if user is logged in.
-        $user_data = check_login($con);
+    // Checks if user is logged in.
+    $user_data = check_login($con);
 ?>
 
 <!DOCTYPE html>
@@ -27,15 +28,12 @@
             <a href='index.php'>Home</a>
             <a href='lesson.php' class="active">Schedule A Lesson</a>
             <a href='about.php'>About</a>
-            <a href='login.php'>Login</a>
+            <?php loginButton() ?>
             <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
                 <i class='fa fa-bars'></i>
             </a>
         </div>
         <!-- End Navigation Menu -->
-
-        <br><br><br>
-        <a href="logout.php">Logout</a>
 
         <br><br><br>
         <center><h1>Schedule A Lesson</h1></center>

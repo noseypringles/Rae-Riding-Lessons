@@ -1,8 +1,17 @@
 <?php
     session_start();
 
-    include("connection.php");
-    include("functions.php");
+    include("functions/connection.php");
+    include("functions/functions.php");
+
+   if(isset($_SESSION['url']))
+   {
+      $url = $_SESSION['url']; // Holds url for last page visited.
+   }
+   else 
+   {
+      $url = "index.php"; // Default page.
+   }
 
     if ($_SERVER['REQUEST_METHOD'] == "POST")
     {
@@ -27,7 +36,7 @@
                   $_SESSION['user_id'] = $user_data['user_id'];
 
                   // Redirects to home page after login.
-                  header("Location: index.php");
+                  header("Location: $url");
                   die;
                }
             }
