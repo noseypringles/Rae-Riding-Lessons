@@ -62,3 +62,27 @@
     text-align: left;
   }
 }
+
+.h2Edits /*edits the heading 2*/
+{
+  margin-right: 1100px;
+  /*uncomment to see the margin*/
+  /*border: 1px solid powderblue;*/
+}
+
+.paragraph /*edits p in html*/
+{
+  margin-left: 500px;
+  margin-right: 500px;
+  /*uncomment to see the margin*/
+  /*border: 1px solid powderblue;*/
+  font-size: 140%;
+}
+
+.footer { /*shows info at bottom of page*/
+  position: relative;
+  top: 300px;
+  /*uncomment to see the border*/
+  /*border: 3px solid #73AD21;*/
+}
+
