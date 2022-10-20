@@ -28,10 +28,10 @@
         <!-- Navigation menu addapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
         <div class='topnav' id='myTopnav'>
             <a href='index.php' style="float: left">Rae Riding Lessons</a>
-            <?php loginButton() ?>
-            <a href='about.php'>About</a>
+            <a href='index.php' class="active">Home</a>
             <a href='lesson.php'>Schedule A Lesson</a>
-            <a href='index.php' class="active">Home</a>         
+            <a href='about.php'>About</a>
+            <?php loginButton() ?>
             <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
                 <i class='fa fa-bars'></i>
             </a>

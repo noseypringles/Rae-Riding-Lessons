@@ -8,7 +8,7 @@
 
 .topnav a /* Link styles */
 {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -81,7 +81,7 @@
 
 .footer { /*shows info at bottom of page*/
   position: relative;
-  top: 300px;
+  top: 1000px;
   /*uncomment to see the border*/
   /*border: 3px solid #73AD21;*/
 }
