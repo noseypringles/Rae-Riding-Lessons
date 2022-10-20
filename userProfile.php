@@ -28,7 +28,7 @@
     <body>
         <!-- Navigation menu addapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
         <div class='topnav' id='myTopnav'>
-            <a href='index.php'>Rae Riding Lessons</a>
+            <a href='index.php' style="float: left">Rae Riding Lessons</a>
             <a href='index.php'>Home</a>
             <a href='lesson.php'>Schedule A Lesson</a>
             <a href='about.php'>About</a>
