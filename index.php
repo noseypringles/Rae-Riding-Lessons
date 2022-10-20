@@ -21,6 +21,7 @@
         <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/calendar.css' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
         <link href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap' rel='stylesheet'/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--new-->
         <title>Rae Riding Lessons | Home</title>
     </head>
 
@@ -39,24 +40,30 @@
         <!-- End Navigation Menu -->
 
         <!--TO DO: need to fix the text when resizing window -->
-        <br><br><br>
-        <center><h1>Home</h1></center>
-      <h2 class='h2Edits'>NewsFeed</h2>
-      <center><p class='paragraph'>Welcome to the Home of Rae and her horses. You can go to the About page to learn all about Rae and her business. If you're thinking of wanting to schedule a lesson then jump right into the login page where you can create an account. If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p></center>
-      <div class="footer">
-        <!-- This is where the contact info is-->
-        <center><p class="paragraph">
-          Contact Info:
-          <br>
-          raeRidingLessons@admin.com
-          <br>
-          (843)-857-5309
-          <br>
-          325 Some Address Ln., North Charleston, SC, 29405
-        </p></center>
+        <br><br><br> <!--new-->
+        <div class="w3-container"> <!--trying to add a box model to contain content-->
+          <center><h1>Home</h1></center>
+          <h2 class='h2Edits'>NewsFeed</h2>
+          <center><p class='paragraph'>Welcome to the Home of Rae and her horses.
+             You can go to the About page to learn all about Rae and her business.
+              If you're thinking of wanting to schedule a lesson then jump right into the login page where you can create an account.
+               If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p></center>
+
+          <div class="footer">
+            <!-- This is where the contact info is-->
+            <center><p class="paragraph">
+              Contact Info:
+              <br>
+              raeRidingLessons@admin.com
+              <br>
+              (843)-867-5309
+              <br>
+              325 Some Address Ln., North Charleston, SC, 29405
+              </p></center>
         
-        <!--Will create link text to show privacy and terms of use  -->
-      </div>
+          <!--Will create link text to show privacy and terms of use  -->
+          </div>
+        </div>
 
     </body>
 </html>
