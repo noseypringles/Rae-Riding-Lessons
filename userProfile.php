@@ -42,6 +42,9 @@
 
         <br><br><br>
         <center><h1>Profile</h1></center>
+        
+        <br><br><br>
+        <?php echo $user_data['first_name'], " ", $user_data['last_name'];?>
 
         <br><br><br>
         <?php calendar() ?>

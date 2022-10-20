@@ -69,7 +69,7 @@
             Zip
             <input id="text" type="text" name="zip"><br><br>
             Password
-            <input id="text" type="text" name="password"><br><br>
+            <input id="text" type="password" name="password"><br><br>
 
             <input id="button" type="submit" value="Signup"><br><br>
 
