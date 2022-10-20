@@ -8,6 +8,32 @@
 
     // Checks if user is logged in.
     $user_data = check_login($con);
+
+    if ($_SERVER['REQUEST_METHOD'] == "POST")
+        {
+            $title = $_POST['title'];
+            $description = $_POST['description'];
+            $date = $_POST['date'];
+            $start_time = $_POST['start_time'];
+            $end_time = $_POST['end_time'];
+            $slots = $_POST['slots'];
+
+            if (!empty($title) && !empty($description) && !empty($date) && !empty($start_time) && !empty($end_time) && !empty($slots))
+            {
+                $query = "INSERT INTO events (title, description, date, start_time, end_time, slots) VALUES ('$title', '$description', '$date', '$start_time', '$end_time', '$slots')";
+            
+                mysqli_query($con, $query);
+
+                // After user signs up they get sent to login page
+                // Log in is not automatic on signup.
+                // header("Location: login.php");
+                // die;
+            }
+            else
+            {
+                echo "Please enter valid information!";
+            }
+        }
 ?>
 
 <!DOCTYPE html>
@@ -45,5 +71,29 @@
     
         <br><br><br>
         <?php calendar() ?>
+
+        <div id="box">
+         <form method="POST">
+            <a id="back" href="javascript:history.back()" class="previous">&lsaquo;</a>
+            
+            <br><br>
+            <div style="font-size: 20px; margin: 10px">Add Lesson</div>
+            
+            Lesson Type
+            <input id="text" type="text" name="title"><br><br>
+            Description
+            <input id="text" type="text" name="description"><br><br>
+            Date
+            <input id="text" type="text" name="date"><br><br>
+            Start Time
+            <input id="text" type="text" name="start_time"><br><br>
+            End time
+            <input id="text" type="text" name="end_time"><br><br>
+            Slots
+            <input id="text" type="text" name="slots"><br><br>
+
+            <input id="button" type="submit" value="Submit"><br><br>
+         </form>
+      </div>
     </body>
 </html>

@@ -13,6 +13,8 @@
       $url = "index.php"; // Default page.
    }
 
+   $emailErr = $passwordErr = "";
+
     if ($_SERVER['REQUEST_METHOD'] == "POST")
     {
         $email = $_POST['email'];
@@ -41,6 +43,16 @@
                }
             }
 
+            if (empty($_POST["email"])) 
+            {
+               $emailErr = "Please enter your email";
+            }
+   
+            if (empty($_POST["password"])) 
+            {
+               $passwordErr = "Please Enter your password";
+            }
+           
             echo "Wrong email or password!";
         }
         else
@@ -61,16 +73,16 @@
 
    <body>
       <div id="box">
-         <form method="POST">
+         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <a id="back" href="javascript:history.back()" class="previous">&lsaquo;</a>
             <br><br>
 
             <div style="font-size: 20px; margin: 10px">Login</div>
 
-            Email
+            Email<span class="error">* <?php echo $emailErr;?></span>
             <input id="text" type="text" name="email"><br><br>
-            Password
-            <input id="text" type="text" name="password"><br><br>
+            Password<span class="error">* <?php echo $passwordErr;?></span>
+            <input id="text" type="password" name="password"><br><br>
 
             <input id="button" type="submit" value="Login"><br><br>
 
