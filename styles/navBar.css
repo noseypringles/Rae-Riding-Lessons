@@ -62,32 +62,3 @@
     text-align: left;
   }
 }
-
-/*Karina: I will probably need to add this to stylesheets instead*/
-
-.h2Edits /*edits the heading 2*/
-{
-  resize: none;
-  padding: 80px;
-  width: 380px;
-  border: 1px /*solid powderblue*/;
-}
-
-.paragraph /*edits p in html*/
-{
-  /*margin-left: 500px;
-  margin-right: 500px;*/
-  resize: none;
-  padding: 20px;
-  width: 700px;
-  border: 1px /*solid powderblue*/;
-  font-size: 140%;
-}
-
-.footer { /*shows info at bottom of page*/
-  position: relative;
-  resize: none;
-  padding: 30px;
-  top: 300px;
-  border: 3px /*solid #73AD21*/;
-}
