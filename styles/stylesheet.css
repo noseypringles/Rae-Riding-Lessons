@@ -22,33 +22,29 @@ a#back:hover
 }
 /* End---Back Button */
 
-/* was in navBar, moved to stylesheet*/
-.h2Edits /*edits the heading 2*/
+/* Start---Scroll bar for list of users on adminProfile.php */
+div.usertable  
 {
-  text-align: left;
-  resize: none;
-  padding: 80px;
-  width: 380px;
-  border: 1px /*solid powderblue*/;
+    margin: auto;
+    width: 80%;
+    height: 500px;
+    overflow: scroll;
 }
 
-.paragraph /*edits p in html*/
+div.usertable table
 {
-  /*margin-left: 500px;
-  margin-right: 500px;*/
-  text-align: center;
-  resize: none;
-  padding: 20px;
-  width: 700px;
-  border: 1px /*solid powderblue*/;
-  font-size: 140%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.footer { /*shows info at bottom of page*/
-  text-align: center;
-  position: relative;
-  resize: none;
-  padding: 30px;
-  top: 300px;
-  border: 3px /*solid #73AD21*/;
+div.usertable tr.userInfo:nth-child(even)
+{
+    background-color: #cccccc;
 }
+div.usertable tr.userInfo td
+{
+    padding: 8px;
+    text-align: center;
+}
+
+/* End---Scroll bar for list of users on adminProfile.php */
