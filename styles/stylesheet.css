@@ -21,3 +21,34 @@ a#back:hover
     border-radius: 50%;
 }
 /* End---Back Button */
+
+/* was in navBar, moved to stylesheet*/
+.h2Edits /*edits the heading 2*/
+{
+  text-align: left;
+  resize: none;
+  padding: 80px;
+  width: 380px;
+  border: 1px /*solid powderblue*/;
+}
+
+.paragraph /*edits p in html*/
+{
+  /*margin-left: 500px;
+  margin-right: 500px;*/
+  text-align: center;
+  resize: none;
+  padding: 20px;
+  width: 700px;
+  border: 1px /*solid powderblue*/;
+  font-size: 140%;
+}
+
+.footer { /*shows info at bottom of page*/
+  text-align: center;
+  position: relative;
+  resize: none;
+  padding: 30px;
+  top: 300px;
+  border: 3px /*solid #73AD21*/;
+}
