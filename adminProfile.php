@@ -56,11 +56,11 @@
         <!-- Navigation menu addapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
         <div class='topnav' id='myTopnav'>
             <a href='index.php' style="float: left">Rae Riding Lessons</a>
-            <a href='index.php'>Home</a>
-            <a href='lesson.php'>Schedule A Lesson</a>
-            <a href='about.php'>About</a>
             <a href='http://raeridinglessons.infinityfreeapp.com/functions/logout.php'>Logout</a>
             <a href='http://raeridinglessons.infinityfreeapp.com/adminProfile.php' class="active"> Admin Profile</a>
+            <a href='about.php'>About</a>
+            <a href='lesson.php'>Schedule A Lesson</a>
+            <a href='index.php'>Home</a>
             <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
                 <i class='fa fa-bars'></i>
             </a>
@@ -68,7 +68,8 @@
         <!-- End Navigation Menu -->
 
         <br><br><br>
-        <center><h1>Admin Profile</h1></center>
+        <div class="w3-container">
+        <h1style="text-align: center">Admin Profile</h1>
     
         <br><br><br>
         <?php calendar() ?>
@@ -95,6 +96,25 @@
 
             <input id="button" type="submit" value="Submit"><br><br>
          </form>
-      </div>
+        </div>
+
+        <div class="footer">
+            <!-- This is where the contact info is-->
+                <p class="paragraph">
+                Contact Info:
+                <br>
+                raeRidingLessons@admin.com
+                <br>
+                (843)-867-5309
+                <br>
+                 325 Some Address Ln., North Charleston, SC, 29405
+                 <br> <br> <br>
+                Copyright 2022 by Blue Team. All Rights Reserved
+                <br>
+                Terms & Conditions      |      Privacy
+                </p>
+            <!--Will create link text to show privacy and terms of use  -->
+            </div>
+        </div>
     </body>
 </html>
