@@ -22,6 +22,7 @@
         <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/calendar.css' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
         <link href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap' rel='stylesheet'/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--new-->
         <title>Rae Riding Lessons | Schedule A Lesson</title>
     </head>
 
@@ -40,9 +41,30 @@
         <!-- End Navigation Menu -->
 
         <br><br><br>
+        <div class="w3-container"> <!--trying to add a box model to contain content-->
+
         <center><h1>Schedule A Lesson</h1></center>
+
+            <div class="footer">
+            <   !-- This is where the contact info is-->
+                <center><p class="paragraph">
+                Contact Info:
+                <br>
+                raeRidingLessons@admin.com
+                <br>
+                (843)-867-5309
+                <br>
+                 325 Some Address Ln., North Charleston, SC, 29405
+                 <br> <br> <br>
+                Copyright 2022 by Blue Team. All Rights Reserved
+                <br>
+                Terms & Conditions      |      Privacy
+                </p></center>
+            <!--Will create link text to show privacy and terms of use  -->
+          </div>
     
         <br><br><br>
         <?php calendar() ?>
+        </div>
     </body>
 </html>
