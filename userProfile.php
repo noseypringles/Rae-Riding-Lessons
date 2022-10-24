@@ -43,7 +43,7 @@
 
         <br><br><br>
         <div class="w3-container">
-        <h1 style="text-align: center">Profile</h1>
+        <center><h1>Profile</h1></center>
         
         <br><br><br>
         <?php echo $user_data['first_name'], " ", $user_data['last_name'];?>
@@ -53,7 +53,7 @@
 
             <div class="footer">
             <!-- This is where the contact info is-->
-                <p class="paragraph">
+            <center><p class="paragraph">
                 Contact Info:
                 <br>
                 raeRidingLessons@admin.com
@@ -65,7 +65,7 @@
                 Copyright 2022 by Blue Team. All Rights Reserved
                 <br>
                 Terms & Conditions      |      Privacy
-                </p>
+                </p></center>
             <!--Will create link text to show privacy and terms of use  -->
             </div>
         </div>
