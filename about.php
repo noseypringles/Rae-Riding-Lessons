@@ -41,17 +41,17 @@
 
         <br><br><br> <!--new-->
         <div class="w3-container"> <!--trying to add a box model to contain content-->
-        <h1 style="text-align: center">About</h1>
-        <img src="http://raeridinglessons.infinityfreeapp.com/images/Rae%20Riding%20Lessons%20Logo.png" alt="close up of horse face with someone on its back" style="width:500px;height:600px;">
-        <p class='paragraph'>Hi! I'm Rae, the Lead Trainer and owner of Rae Riding Lessons.
+        <img src="Rae Riding Lessons Logo.png" alt="close up of horse face with someone on its back" style="width:250px; height:300px;">
+        <center><h1>About</h1></center>
+        <center><p class='paragraph'>Hi! I'm Rae, the Lead Trainer and owner of Rae Riding Lessons.
              Here at this business, we want to build special relationships with the horses and the clients.
               We offer group lessons for beginners, intermediate, and advance!
                If you're not too comfortable with a group or would like to have a more one on one time with learning on how to ride horses, 
                then we offer appointments for singles too and would be happy to help and meet your needs.
-               If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p>
+               If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p> </center>
                <div class="footer">
             <!-- This is where the contact info is-->
-            <p class="paragraph">
+            <center><p class="paragraph">
               Contact Info:
               <br>
               raeRidingLessons@admin.com
@@ -63,7 +63,7 @@
               Copyright 2022 by Blue Team. All Rights Reserved
               <br>
               Terms & Conditions      |      Privacy
-              </p>
+              </p></center>
         
           <!--Will create link text to show privacy and terms of use  -->
           </div>

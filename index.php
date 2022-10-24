@@ -42,16 +42,16 @@
         <!--TO DO: need to fix the text when resizing window -->
         <br><br><br> <!--new-->
         <div class="w3-container"> <!--trying to add a box model to contain content-->
-          <h1 style="text-align: center">Home</h1>
+        <center><h1>Home</h1></center>
           <h2 class='h2Edits'>NewsFeed</h2>
-          <p class='paragraph'>Welcome to the Home of Rae and her horses.
+          <center><p class='paragraph'>Welcome to the Home of Rae and her horses.
              You can go to the About page to learn all about Rae and her business.
               If you're thinking of wanting to schedule a lesson then jump right into the login page where you can create an account.
-               If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p>
+               If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p></center>
 
           <div class="footer">
             <!-- This is where the contact info is-->
-            <p class="paragraph">
+            <center><p class="paragraph">
               Contact Info:
               <br>
               raeRidingLessons@admin.com
@@ -63,7 +63,7 @@
               Copyright 2022 by Blue Team. All Rights Reserved
               <br>
               Terms & Conditions      |      Privacy
-              </p>
+              </p></center>
         
           <!--Will create link text to show privacy and terms of use  -->
           </div>

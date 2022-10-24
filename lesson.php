@@ -43,7 +43,7 @@
         <br><br><br>
         <div class="w3-container"> <!--trying to add a box model to contain content-->
 
-        <h1 style="text-align: center">Schedule A Lesson</h1>
+        <h1>Schedule A Lesson</h1>
 
             <div class="footer">
             <!-- This is where the contact info is-->
