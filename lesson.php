@@ -14,7 +14,19 @@
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/navBar.js'></script>  
+        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/navBar.js'></script>
+        
+        <!--notification system from onesignal.com -->
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+            window.OneSignal = window.OneSignal || [];
+            OneSignal.push(function() {
+                OneSignal.init({
+                appId: "d7d282ae-c1bf-415b-ac62-2764330706db",
+                });
+            });
+        </script>
+
         <!-- Library for hamburger menu icon -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
         <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/navBar.css'>
@@ -45,6 +57,8 @@
 
         <h1>Schedule A Lesson</h1>
 
+        <?php calendar() ?>
+
             <div class="footer">
             <!-- This is where the contact info is-->
                 <p class="paragraph">
@@ -58,13 +72,33 @@
                  <br> <br> <br>
                 Copyright 2022 by Blue Team. All Rights Reserved
                 <br>
-                Terms & Conditions      |      Privacy
-                </p>
-            <!--Will create link text to show privacy and terms of use  -->
-          </div>
-    
-        <br><br><br>
-        <?php calendar() ?>
-        </div>
+              </p></center>
+              <!--should create popup box upon clicking-->
+              <center><a class="trigger_popup_fricc">Terms & Conditions</a>
+              <a class="trigger_popup_fricc"> Privacy</a></center>
+              <div class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                    <div class="popupCloseButton">&times;</div> <!--content upon clicking-->
+                    <p>Your access to and use of the Service is conditioned on 
+                        <br>Your acceptance of and compliance with these Terms and Conditions.
+                        <br>These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+                        <br>By accessing or using the Service You agree to be bound by these Terms and Conditions.
+                        <br>If You disagree with any part of these Terms and Conditions then You may not access the Service.
+                        <br>Your access to and use of the Service is also conditioned on 
+                        <br>Your acceptance of and compliance with the Privacy Policy of the Company.
+                        <br>Our Privacy Policy describes Our policies and procedures on the collection,
+                        <br>use and disclosure of Your personal information when You use the Application or 
+                        <br>the Website and tells You about Your privacy rights and how the law protects You.
+                        <br>Please read Our Privacy Policy carefully before using Our Service.</p>
+                        <!--<a> read more...</a> open new tab to show full terms and conditions-->
+
+                    </p>
+                <!--Will create link text to show privacy and terms of use  -->
+                </div>
+              </div><!--hover_bkgr_fricc-->
+            </div><!--footer-->
+                <br><br><br>
+        </div><!--w3 container-->
     </body>
 </html>
