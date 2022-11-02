@@ -14,7 +14,22 @@
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/navBar.js'></script>  
-        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/popupBox.js'></script>  
+        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/popupBox.js'></script>
+        
+        <!--notification system from onesignal.com -->
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+            window.OneSignal = window.OneSignal || [];
+            OneSignal.push(function() {
+                OneSignal.init({
+                appId: "d7d282ae-c1bf-415b-ac62-2764330706db",
+                });
+            });
+        </script>
+
+        <!--want to see if this is needed for popup box-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
         <!-- Library for hamburger menu icon -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
         <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/navBar.css'>
@@ -41,9 +56,9 @@
         </div>
         <!-- End Navigation Menu -->
 
-        <!--TO DO: need to fix the text when resizing window -->
+        <!--Fixed: fix the text when resizing window -->
         <br><br><br> <!--new-->
-        <div class="w3-container"> <!--trying to add a box model to contain content-->
+        <div class="w3-container"> <!--a box model to contain content-->
         <center><h1>Home</h1></center>
           <h2 class='h2Edits'>NewsFeed</h2>
           <center><p class='paragraph'>Welcome to the Home of Rae and her horses.
@@ -65,12 +80,13 @@
               Copyright 2022 by Blue Team. All Rights Reserved
               <br>
               </p></center>
-              <a class="trigger_popup_fricc">Terms & Conditions</a><p>      |     </p>
-              <a class="trigger_popup_fricc"> Privacy</a>
+              <!--should create popup box upon clicking-->
+              <center><a class="trigger_popup_fricc">Terms & Conditions</a>
+              <a class="trigger_popup_fricc"> Privacy</a></center>
               <div class="hover_bkgr_fricc">
                 <span class="helper"></span>
                 <div>
-                    <div class="popupCloseButton">&times;</div>
+                    <div class="popupCloseButton">&times;</div> <!--content upon clicking-->
                     <p>Your access to and use of the Service is conditioned on 
                         <br>Your acceptance of and compliance with these Terms and Conditions.
                         <br>These Terms and Conditions apply to all visitors, users and others who access or use the Service.
@@ -83,13 +99,11 @@
                         <br>the Website and tells You about Your privacy rights and how the law protects You.
                         <br>Please read Our Privacy Policy carefully before using Our Service.</p>
                         <!--<a> read more...</a> open new tab to show full terms and conditions-->
-
                     </p>
-
-        
-          <!--Will create link text to show privacy and terms of use  -->
-          </div>
-        </div>
+                </div>
+              </div> <!--hover_bkgr_fricc-->
+          </div><!--footer-->
+        </div><!--w3 container-->
 
     </body>
 </html>
