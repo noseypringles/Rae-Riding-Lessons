@@ -27,6 +27,9 @@
             });
         </script>
 
+        <!--needed for popup box-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
         <!-- Library for hamburger menu icon -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
         <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/navBar.css'>
@@ -80,7 +83,7 @@
                 <span class="helper"></span>
                 <div>
                     <div class="popupCloseButton">&times;</div> <!--content upon clicking-->
-                    <p>Your access to and use of the Service is conditioned on 
+                    <center><p>Your access to and use of the Service is conditioned on 
                         <br>Your acceptance of and compliance with these Terms and Conditions.
                         <br>These Terms and Conditions apply to all visitors, users and others who access or use the Service.
                         <br>By accessing or using the Service You agree to be bound by these Terms and Conditions.
@@ -93,7 +96,7 @@
                         <br>Please read Our Privacy Policy carefully before using Our Service.</p>
                         <!--<a> read more...</a> open new tab to show full terms and conditions-->
 
-                    </p>
+                    </p></center>
                 <!--Will create link text to show privacy and terms of use  -->
                 </div>
               </div><!--hover_bkgr_fricc-->

@@ -27,7 +27,7 @@
             });
         </script>
 
-        <!--want to see if this is needed for popup box-->
+        <!--needed for popup box-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
         <!-- Library for hamburger menu icon -->
@@ -87,7 +87,7 @@
                 <span class="helper"></span>
                 <div>
                     <div class="popupCloseButton">&times;</div> <!--content upon clicking-->
-                    <p>Your access to and use of the Service is conditioned on 
+                    <center><p>Your access to and use of the Service is conditioned on 
                         <br>Your acceptance of and compliance with these Terms and Conditions.
                         <br>These Terms and Conditions apply to all visitors, users and others who access or use the Service.
                         <br>By accessing or using the Service You agree to be bound by these Terms and Conditions.
@@ -99,7 +99,7 @@
                         <br>the Website and tells You about Your privacy rights and how the law protects You.
                         <br>Please read Our Privacy Policy carefully before using Our Service.</p>
                         <!--<a> read more...</a> open new tab to show full terms and conditions-->
-                    </p>
+                    </p></center>
                 </div>
               </div> <!--hover_bkgr_fricc-->
           </div><!--footer-->
