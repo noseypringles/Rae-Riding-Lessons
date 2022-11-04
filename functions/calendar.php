@@ -4,7 +4,26 @@
     // Checks if user is logged in.
     $user_data = check_login($con);
 
-    $query = "SELECT * FROM `events`";
+    if ($user_data['admin'] == 1) // Admin
+    {
+      $query = "SELECT * FROM `events`";
+    }
+    else if ($user_data['level'] == "Beginner") // Beginner
+    {
+      $query = "SELECT * FROM `events` WHERE level='Beginner'";
+    }
+    else if ($user_data['level'] == "Intermediate") // Intermediate
+    {
+      $query = "SELECT * FROM `events` WHERE level='Intermediate'";
+    }
+    else if ($user_data['level'] == "Advanced") // Advanced
+    {
+      $query = "SELECT * FROM `events` WHERE level='Advanced'";
+    }
+    else // Broke things
+    {
+      echo "You suck so much you don't have a skill level!";
+    }
     
     $result = mysqli_query($con,$query);
     $lessonData = array();
