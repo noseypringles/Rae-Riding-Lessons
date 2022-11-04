@@ -48,7 +48,7 @@
         <!-- End Navigation Menu -->
 
         <br><br><br>
-        <div class="w3-container">
+        <div class="w3-container"><!--a box model to contain content-->
         <center><h1>Profile</h1></center>
         
         <br><br><br>

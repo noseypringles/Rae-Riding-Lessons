@@ -50,7 +50,7 @@
         <div class="w3-container"> <!--a box model to contain content-->
         <center><h1>Home</h1></center>
           <h2 class='h2Edits'>NewsFeed</h2>
-          <p>
+          <p class='h2Edits'>
             <?php
                     $newsQuery = "SELECT news FROM `users` WHERE user_id=92233";
 
