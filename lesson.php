@@ -15,17 +15,6 @@
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/navBar.js'></script>
-        
-        <!--notification system from onesignal.com -->
-        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-        <script>
-            window.OneSignal = window.OneSignal || [];
-            OneSignal.push(function() {
-                OneSignal.init({
-                appId: "d7d282ae-c1bf-415b-ac62-2764330706db",
-                });
-            });
-        </script>
 
         <!--needed for popup box-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
