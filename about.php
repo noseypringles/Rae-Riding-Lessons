@@ -13,7 +13,8 @@
 <html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/navBar.js'></script>  
+        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/navBar.js'></script>
+        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/popupBox.js'></script>
 
         <!--needed for popup box-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -26,6 +27,7 @@
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
         <link href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap' rel='stylesheet'/>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--new-->
+        <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/popupBox.css' />
         <title>Rae Riding Lessons | About</title>
     </head>
 
@@ -53,7 +55,8 @@
                If you're not too comfortable with a group or would like to have a more one on one time with learning on how to ride horses, 
                then we offer appointments for singles too and would be happy to help and meet your needs.
                If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p> </center>
-               <div class="footer">
+               
+            <div class="footer">
             <!-- This is where the contact info is-->
             <center><p class="paragraph">
               Contact Info:

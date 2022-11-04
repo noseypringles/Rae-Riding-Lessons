@@ -15,6 +15,21 @@
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/navBar.js'></script>
+        <script type='text/javascript' src='http://raeridinglessons.infinityfreeapp.com/functions/popupBox.js'></script>
+        
+        <!--needed for popup box-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <!--notification system from onesignal.com -->
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+            window.OneSignal = window.OneSignal || [];
+            OneSignal.push(function() {
+                OneSignal.init({
+                appId: "d7d282ae-c1bf-415b-ac62-2764330706db",
+                });
+            });
+        </script>
 
         <!--needed for popup box-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -27,6 +42,7 @@
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
         <link href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap' rel='stylesheet'/>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--new-->
+        <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/popupBox.css' />
         <title>Rae Riding Lessons | Schedule A Lesson</title>
     </head>
 
@@ -47,12 +63,13 @@
         <br><br><br>
         <div class="w3-container"> <!--trying to add a box model to contain content-->
 
-        <h1>Schedule A Lesson</h1>
+        <center><h1>Schedule A Lesson</h1></center>
 
         <?php calendar() ?>
 
-            <div class="footer">
+        <div class="footer">
             <!-- This is where the contact info is-->
+            <center>
                 <p class="paragraph">
                 Contact Info:
                 <br>

@@ -93,6 +93,5 @@
               </div> <!--hover_bkgr_fricc-->
           </div><!--footer-->
         </div><!--w3 container-->
-
     </body>
 </html>
