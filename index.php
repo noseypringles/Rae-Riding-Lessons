@@ -50,6 +50,17 @@
         <div class="w3-container"> <!--a box model to contain content-->
         <center><h1>Home</h1></center>
           <h2 class='h2Edits'>NewsFeed</h2>
+          <p>
+            <?php
+                    $newsQuery = "SELECT news FROM `users` WHERE user_id=92233";
+
+                    $news = mysqli_query($con, $newsQuery);
+                    $newsRow = mysqli_fetch_array($news, MYSQLI_ASSOC);
+
+                    echo $newsRow['news'];
+                ?>
+            </p>
+          
           <center><p class='paragraph'>Welcome to the Home of Rae and her horses.
              You can go to the About page to learn all about Rae and her business.
               If you're thinking of wanting to schedule a lesson then jump right into the login page where you can create an account.

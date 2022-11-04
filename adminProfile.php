@@ -60,6 +60,13 @@
             
             mysqli_query($con, $skillQuery);
         }
+        else if ($_POST['news'])
+        {
+            $news = $_POST['newsTextArea'];
+            $newsQuery = "UPDATE users SET news='$news' WHERE user_id='92233'";
+            
+            mysqli_query($con, $newsQuery);
+        }
         else
         {
             echo "Well we tried!";
@@ -111,11 +118,29 @@
         <?php calendar() ?>
 
         <br><br><br>
+        <center>
+        <div class="addNews">
+            <b><big>Add News</big></b>
+            <?php
+                $oldNewsQuery = "SELECT news FROM `users` WHERE user_id=92233";
+
+                $oldNews = mysqli_query($con, $oldNewsQuery);
+                $newsRow = mysqli_fetch_array($oldNews, MYSQLI_ASSOC);
+
+                echo "<form method='post'>
+                <textarea name='newsTextArea' rows='10' cols='80'>", $newsRow['news'], "</textarea><br><br>
+                <input type='submit' name='news' value='Add News' />
+            </form>";
+            ?>
+        </div>
+        </center>
+
+        <br><br><br>
         <div class="usertable">
                 <?php
                     $query = "SELECT * FROM `users`";
 
-                    $result = mysqli_query($con,$query);
+                    $result = mysqli_query($con, $query);
 
                     echo "<table class='table'>
                             <th>Name</th>
