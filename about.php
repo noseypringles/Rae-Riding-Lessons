@@ -30,6 +30,11 @@
         <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/popupBox.css' />
         <title>Rae Riding Lessons | About</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        
+        <!--Font style-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -50,7 +55,7 @@
         <div class="w3-container"> <!--trying to add a box model to contain content-->
         <img src="http://raeridinglessons.infinityfreeapp.com/images/Rae%20Riding%20Lessons%20Logo-min.png" alt="close up of horse face with someone on its back" style="width:250px; height:300px;">
         <center><h1>About</h1></center>
-        <center><p class='paragraph'>Hi! I'm Rae, the Lead Trainer and owner of Rae Riding Lessons.
+        <center><p class='paragraph' sytle="dispaly:inline">Hi! I'm Rae, the Lead Trainer and owner of Rae Riding Lessons.
              Here at this business, we want to build special relationships with the horses and the clients.
               We offer group lessons for beginners, intermediate, and advance!
                If you're not too comfortable with a group or would like to have a more one on one time with learning on how to ride horses, 

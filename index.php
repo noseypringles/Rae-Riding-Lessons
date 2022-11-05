@@ -30,6 +30,11 @@
         <link rel='stylesheet' href='http://raeridinglessons.infinityfreeapp.com/styles/popupBox.css' />
         <title>Rae Riding Lessons | Home</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+        <!--Font style-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -62,10 +67,12 @@
                 ?>
             </p>
           
+            <div sytle="dispaly:inline">
           <center><p class='paragraph'>Welcome to the Home of Rae and her horses.
              You can go to the About page to learn all about Rae and her business.
               If you're thinking of wanting to schedule a lesson then jump right into the login page where you can create an account.
                If you would like to contact us for more information or to ask questions, you can contact us with the information listed below.</p></center>
+            </div> <!--make the text side by side with other p tag-->
 
           <div class="footer">
             <!-- This is where the contact info is-->
